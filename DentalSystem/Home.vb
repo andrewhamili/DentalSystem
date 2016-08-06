@@ -12,4 +12,8 @@
         End If
 
     End Sub
+
+    Private Sub Home_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        lbl_welcomeText.Text = "Welcome " & activeuserfname & " " & activeuserlname & ""
+    End Sub
 End Class

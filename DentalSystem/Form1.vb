@@ -60,4 +60,8 @@ Public Class Login
             MySQLConn.Dispose()
         End Try
     End Sub
+
+    Private Sub btn_cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancel.Click
+        End
+    End Sub
 End Class
