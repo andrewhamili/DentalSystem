@@ -1,0 +1,10 @@
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\bin\Debug\DentalSystem.exe
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\bin\Debug\DentalSystem.pdb
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\bin\Debug\DentalSystem.xml
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Resources.resources
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.vbproj.GenerateResource.Cache
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.exe
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.xml
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.pdb
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Login.resources
+c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Home.resources
