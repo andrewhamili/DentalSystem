@@ -41,9 +41,9 @@ Partial Class Home
         Me.lbl_welcomeText.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_welcomeText.Location = New System.Drawing.Point(13, 12)
         Me.lbl_welcomeText.Name = "lbl_welcomeText"
-        Me.lbl_welcomeText.Size = New System.Drawing.Size(72, 22)
+        Me.lbl_welcomeText.Size = New System.Drawing.Size(134, 22)
         Me.lbl_welcomeText.TabIndex = 1
-        Me.lbl_welcomeText.Text = "Label1"
+        Me.lbl_welcomeText.Text = "WelcomeText"
         '
         'Home
         '
