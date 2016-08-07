@@ -8,3 +8,4 @@ c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\
 c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.pdb
 c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Login.resources
 c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Home.resources
+C:\Users\Andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.AccountManagement.resources

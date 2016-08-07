@@ -44,6 +44,7 @@ Partial Class Login
         Me.txt_password.Name = "txt_password"
         Me.txt_password.Size = New System.Drawing.Size(190, 26)
         Me.txt_password.TabIndex = 1
+        Me.txt_password.UseSystemPasswordChar = True
         '
         'btn_login
         '
@@ -104,7 +105,7 @@ Partial Class Login
         Me.Controls.Add(Me.txt_password)
         Me.Controls.Add(Me.txt_username)
         Me.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dental System"

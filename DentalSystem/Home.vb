@@ -14,6 +14,13 @@
     End Sub
 
     Private Sub Home_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Timer_DateTime.Enabled = True
         lbl_welcomeText.Text = "Welcome " & activeuserfname & " " & activeuserlname & ""
+    End Sub
+
+    Private Sub Timer_DateTime_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer_DateTime.Tick
+        lbl_date.Text = Now.ToString("MMMM dd, yyyy")
+        lbl_time.Text = Now.ToString("HH:mm:ss")
+
     End Sub
 End Class

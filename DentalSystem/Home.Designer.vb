@@ -22,13 +22,17 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btn_logout = New System.Windows.Forms.Button()
         Me.lbl_welcomeText = New System.Windows.Forms.Label()
+        Me.lbl_date = New System.Windows.Forms.Label()
+        Me.lbl_time = New System.Windows.Forms.Label()
+        Me.Timer_DateTime = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'btn_logout
         '
-        Me.btn_logout.Location = New System.Drawing.Point(319, 12)
+        Me.btn_logout.Location = New System.Drawing.Point(319, 300)
         Me.btn_logout.Name = "btn_logout"
         Me.btn_logout.Size = New System.Drawing.Size(95, 51)
         Me.btn_logout.TabIndex = 0
@@ -45,14 +49,39 @@ Partial Class Home
         Me.lbl_welcomeText.TabIndex = 1
         Me.lbl_welcomeText.Text = "WelcomeText"
         '
+        'lbl_date
+        '
+        Me.lbl_date.AutoSize = True
+        Me.lbl_date.Location = New System.Drawing.Point(14, 42)
+        Me.lbl_date.Name = "lbl_date"
+        Me.lbl_date.Size = New System.Drawing.Size(42, 18)
+        Me.lbl_date.TabIndex = 2
+        Me.lbl_date.Text = "Date"
+        '
+        'lbl_time
+        '
+        Me.lbl_time.AutoSize = True
+        Me.lbl_time.Location = New System.Drawing.Point(14, 60)
+        Me.lbl_time.Name = "lbl_time"
+        Me.lbl_time.Size = New System.Drawing.Size(42, 18)
+        Me.lbl_time.TabIndex = 3
+        Me.lbl_time.Text = "Time"
+        '
+        'Timer_DateTime
+        '
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(426, 363)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.lbl_time)
+        Me.Controls.Add(Me.lbl_date)
         Me.Controls.Add(Me.lbl_welcomeText)
         Me.Controls.Add(Me.btn_logout)
         Me.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Home"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -63,4 +92,7 @@ Partial Class Home
     End Sub
     Friend WithEvents btn_logout As System.Windows.Forms.Button
     Friend WithEvents lbl_welcomeText As System.Windows.Forms.Label
+    Friend WithEvents lbl_date As System.Windows.Forms.Label
+    Friend WithEvents lbl_time As System.Windows.Forms.Label
+    Friend WithEvents Timer_DateTime As System.Windows.Forms.Timer
 End Class
