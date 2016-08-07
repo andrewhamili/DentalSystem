@@ -6,6 +6,10 @@ Public Class Login
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        Me.Text = SystemTitle 'Get the System Title Bar text from the Public String Variable "SystemTitle"
+
+        lbl_header.Text = SystemTitle
+
         AcceptButton = btn_login 'Set the Button "btn_login" to be pressed using carriage return.
 
         CancelButton = btn_cancel 'Set the Button "btn_cancel" to be pressed using the ESC key.
@@ -57,7 +61,7 @@ Public Class Login
 
                 Else
                     'Log-in credentials Error
-                    MsgBox("Incorrect username or password", MsgBoxStyle.Critical, "Dental System")
+                    MsgBox("Incorrect username or password", MsgBoxStyle.Critical, SystemTitle)
                     attempt += 1 'Incremet the "attempt" variable
 
                     txt_username.Text = "" 'Clear the username TextBox
@@ -74,7 +78,7 @@ Public Class Login
             End Try
             If attempt = 3 Then
                 'If the "attempt" variable reached 3 then this will occur
-                MsgBox("You have reached the maximum attempts allowed for Logging-in. System terminate.", MsgBoxStyle.Critical, "Dental System") 'Display MessageBox informin the user that he has reachd the maximum attempts.
+                MsgBox("You have reached the maximum attempts allowed for Logging-in. System terminate.", MsgBoxStyle.Critical, SystemTitle) 'Display MessageBox informin the user that he has reachd the maximum attempts.
 
                 End 'Terminate the process.
             End If

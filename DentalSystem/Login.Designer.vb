@@ -28,7 +28,7 @@ Partial Class Login
         Me.btn_cancel = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lbl_header = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txt_username
@@ -82,22 +82,22 @@ Partial Class Login
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Password"
         '
-        'Label3
+        'lbl_header
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 20.0!)
-        Me.Label3.Location = New System.Drawing.Point(241, 9)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(193, 32)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Dental System"
+        Me.lbl_header.AutoSize = True
+        Me.lbl_header.Font = New System.Drawing.Font("Arial", 20.0!)
+        Me.lbl_header.Location = New System.Drawing.Point(241, 9)
+        Me.lbl_header.Name = "lbl_header"
+        Me.lbl_header.Size = New System.Drawing.Size(193, 32)
+        Me.lbl_header.TabIndex = 6
+        Me.lbl_header.Text = "Dental System"
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(596, 286)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lbl_header)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_cancel)
@@ -119,6 +119,6 @@ Partial Class Login
     Friend WithEvents btn_cancel As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lbl_header As System.Windows.Forms.Label
 
 End Class

@@ -23,16 +23,24 @@ Partial Class Home
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btn_logout = New System.Windows.Forms.Button()
         Me.lbl_welcomeText = New System.Windows.Forms.Label()
         Me.lbl_date = New System.Windows.Forms.Label()
         Me.lbl_time = New System.Windows.Forms.Label()
         Me.Timer_DateTime = New System.Windows.Forms.Timer(Me.components)
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPatientlist = New System.Windows.Forms.TabPage()
+        Me.dgv_patientlist = New System.Windows.Forms.DataGridView()
+        Me.btn_AddPatient = New System.Windows.Forms.Button()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPatientlist.SuspendLayout()
+        CType(Me.dgv_patientlist, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_logout
         '
-        Me.btn_logout.Location = New System.Drawing.Point(319, 300)
+        Me.btn_logout.Location = New System.Drawing.Point(1204, -1)
         Me.btn_logout.Name = "btn_logout"
         Me.btn_logout.Size = New System.Drawing.Size(95, 51)
         Me.btn_logout.TabIndex = 0
@@ -70,12 +78,62 @@ Partial Class Home
         'Timer_DateTime
         '
         '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabPatientlist)
+        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.TabControl1.Location = New System.Drawing.Point(0, 143)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1306, 375)
+        Me.TabControl1.TabIndex = 4
+        '
+        'TabPatientlist
+        '
+        Me.TabPatientlist.Controls.Add(Me.dgv_patientlist)
+        Me.TabPatientlist.Location = New System.Drawing.Point(4, 27)
+        Me.TabPatientlist.Name = "TabPatientlist"
+        Me.TabPatientlist.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPatientlist.Size = New System.Drawing.Size(1298, 344)
+        Me.TabPatientlist.TabIndex = 0
+        Me.TabPatientlist.Text = "Patients"
+        Me.TabPatientlist.UseVisualStyleBackColor = True
+        '
+        'dgv_patientlist
+        '
+        Me.dgv_patientlist.AllowUserToAddRows = False
+        Me.dgv_patientlist.AllowUserToDeleteRows = False
+        Me.dgv_patientlist.AllowUserToOrderColumns = True
+        Me.dgv_patientlist.AllowUserToResizeRows = False
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dgv_patientlist.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgv_patientlist.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_patientlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_patientlist.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_patientlist.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.dgv_patientlist.Location = New System.Drawing.Point(3, 3)
+        Me.dgv_patientlist.Name = "dgv_patientlist"
+        Me.dgv_patientlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgv_patientlist.Size = New System.Drawing.Size(1292, 338)
+        Me.dgv_patientlist.TabIndex = 0
+        '
+        'btn_AddPatient
+        '
+        Me.btn_AddPatient.Location = New System.Drawing.Point(1153, 114)
+        Me.btn_AddPatient.Name = "btn_AddPatient"
+        Me.btn_AddPatient.Size = New System.Drawing.Size(146, 50)
+        Me.btn_AddPatient.TabIndex = 5
+        Me.btn_AddPatient.Text = "Add Patient"
+        Me.btn_AddPatient.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(426, 363)
+        Me.ClientSize = New System.Drawing.Size(1306, 518)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btn_AddPatient)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.lbl_time)
         Me.Controls.Add(Me.lbl_date)
         Me.Controls.Add(Me.lbl_welcomeText)
@@ -86,6 +144,9 @@ Partial Class Home
         Me.Name = "Home"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Home"
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPatientlist.ResumeLayout(False)
+        CType(Me.dgv_patientlist, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -95,4 +156,8 @@ Partial Class Home
     Friend WithEvents lbl_date As System.Windows.Forms.Label
     Friend WithEvents lbl_time As System.Windows.Forms.Label
     Friend WithEvents Timer_DateTime As System.Windows.Forms.Timer
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents TabPatientlist As System.Windows.Forms.TabPage
+    Friend WithEvents dgv_patientlist As System.Windows.Forms.DataGridView
+    Friend WithEvents btn_AddPatient As System.Windows.Forms.Button
 End Class

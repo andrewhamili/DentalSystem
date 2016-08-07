@@ -1,6 +1,9 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Module GlobalVariableModule
+
+    Public SystemTitle As String = "Dental System"
+
     Public MySQLConn As New MySqlConnection
     Public connstring As String = "server=localhost;userid=root;Password=microcircle;database=dentalsystem"
     Public comm As MySqlCommand
