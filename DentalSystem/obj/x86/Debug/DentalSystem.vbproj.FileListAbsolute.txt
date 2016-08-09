@@ -10,3 +10,6 @@ c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\
 c:\users\andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Home.resources
 C:\Users\Andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.AccountManagement.resources
 C:\Users\Andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.PatientRegistrationForm.resources
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.exe
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.xml
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.pdb
