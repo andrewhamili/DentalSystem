@@ -31,7 +31,7 @@ Public Class Home
 
     End Sub
 
-    Private Sub Load_Patientlist()
+    Public Sub Load_Patientlist()
 
         If MySQLConn.State = ConnectionState.Open Then
             MySQLConn.Close()
@@ -65,5 +65,9 @@ Public Class Home
     Private Sub btn_AddPatient_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_AddPatient.Click
         Me.Hide()
         PatientRegistrationForm.ShowDialog()
+    End Sub
+
+    Private Sub btn_UserAccountManagement_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_UserAccountManagement.Click
+        AccountManagement.ShowDialog()
     End Sub
 End Class

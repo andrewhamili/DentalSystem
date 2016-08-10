@@ -33,6 +33,7 @@ Partial Class Home
         Me.TabPatientlist = New System.Windows.Forms.TabPage()
         Me.dgv_patientlist = New System.Windows.Forms.DataGridView()
         Me.btn_AddPatient = New System.Windows.Forms.Button()
+        Me.btn_UserAccountManagement = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPatientlist.SuspendLayout()
         CType(Me.dgv_patientlist, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,6 +114,7 @@ Partial Class Home
         Me.dgv_patientlist.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_patientlist.Location = New System.Drawing.Point(3, 3)
         Me.dgv_patientlist.Name = "dgv_patientlist"
+        Me.dgv_patientlist.RowHeadersVisible = False
         Me.dgv_patientlist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_patientlist.Size = New System.Drawing.Size(1292, 338)
         Me.dgv_patientlist.TabIndex = 0
@@ -126,12 +128,22 @@ Partial Class Home
         Me.btn_AddPatient.Text = "Add Patient"
         Me.btn_AddPatient.UseVisualStyleBackColor = True
         '
+        'btn_UserAccountManagement
+        '
+        Me.btn_UserAccountManagement.Location = New System.Drawing.Point(1078, -1)
+        Me.btn_UserAccountManagement.Name = "btn_UserAccountManagement"
+        Me.btn_UserAccountManagement.Size = New System.Drawing.Size(120, 51)
+        Me.btn_UserAccountManagement.TabIndex = 6
+        Me.btn_UserAccountManagement.Text = "User Account Management"
+        Me.btn_UserAccountManagement.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1306, 518)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btn_UserAccountManagement)
         Me.Controls.Add(Me.btn_AddPatient)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.lbl_time)
@@ -160,4 +172,5 @@ Partial Class Home
     Friend WithEvents TabPatientlist As System.Windows.Forms.TabPage
     Friend WithEvents dgv_patientlist As System.Windows.Forms.DataGridView
     Friend WithEvents btn_AddPatient As System.Windows.Forms.Button
+    Friend WithEvents btn_UserAccountManagement As System.Windows.Forms.Button
 End Class

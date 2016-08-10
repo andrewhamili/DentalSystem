@@ -14,6 +14,7 @@ Partial Class PatientRegistrationForm
         End Try
     End Sub
 
+
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
@@ -38,14 +39,16 @@ Partial Class PatientRegistrationForm
         Me.cbox_bloodtype = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.cboxpatientgender = New System.Windows.Forms.ComboBox()
-        Me.pboxpatientpic = New System.Windows.Forms.PictureBox()
+        Me.pbox_patientpic = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.btn_save = New System.Windows.Forms.Button()
         Me.txt_lname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lbl_patientid = New System.Windows.Forms.Label()
         Me.dtp_bday = New System.Windows.Forms.DateTimePicker()
-        CType(Me.pboxpatientpic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbox_patientpic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -189,14 +192,14 @@ Partial Class PatientRegistrationForm
         Me.cboxpatientgender.Size = New System.Drawing.Size(121, 26)
         Me.cboxpatientgender.TabIndex = 0
         '
-        'pboxpatientpic
+        'pbox_patientpic
         '
-        Me.pboxpatientpic.Location = New System.Drawing.Point(438, 79)
-        Me.pboxpatientpic.Name = "pboxpatientpic"
-        Me.pboxpatientpic.Size = New System.Drawing.Size(132, 130)
-        Me.pboxpatientpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pboxpatientpic.TabIndex = 28
-        Me.pboxpatientpic.TabStop = False
+        Me.pbox_patientpic.Location = New System.Drawing.Point(438, 79)
+        Me.pbox_patientpic.Name = "pbox_patientpic"
+        Me.pbox_patientpic.Size = New System.Drawing.Size(132, 130)
+        Me.pbox_patientpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbox_patientpic.TabIndex = 28
+        Me.pbox_patientpic.TabStop = False
         '
         'Button1
         '
@@ -207,6 +210,7 @@ Partial Class PatientRegistrationForm
         Me.Button1.TabStop = False
         Me.Button1.Text = "Change"
         Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
         '
         'OpenFileDialog1
         '
@@ -238,15 +242,31 @@ Partial Class PatientRegistrationForm
         Me.Label2.TabIndex = 31
         Me.Label2.Text = "Last Name*"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(36, 112)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(76, 18)
+        Me.Label8.TabIndex = 23
+        Me.Label8.Text = "Patient ID"
+        '
+        'lbl_patientid
+        '
+        Me.lbl_patientid.AutoSize = True
+        Me.lbl_patientid.Location = New System.Drawing.Point(118, 112)
+        Me.lbl_patientid.Name = "lbl_patientid"
+        Me.lbl_patientid.Size = New System.Drawing.Size(68, 18)
+        Me.lbl_patientid.TabIndex = 23
+        Me.lbl_patientid.Text = "patientid"
+        '
         'dtp_bday
         '
-        Me.dtp_bday.CustomFormat = "MM/dd/yyyy"
         Me.dtp_bday.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtp_bday.Location = New System.Drawing.Point(176, 336)
         Me.dtp_bday.Name = "dtp_bday"
         Me.dtp_bday.Size = New System.Drawing.Size(200, 26)
-        Me.dtp_bday.TabIndex = 4
-        Me.dtp_bday.Value = New Date(2000, 1, 1, 0, 0, 0, 0)
+        Me.dtp_bday.TabIndex = 32
         '
         'PatientRegistrationForm
         '
@@ -258,8 +278,10 @@ Partial Class PatientRegistrationForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btn_save)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.pboxpatientpic)
+        Me.Controls.Add(Me.pbox_patientpic)
         Me.Controls.Add(Me.cboxpatientgender)
+        Me.Controls.Add(Me.lbl_patientid)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.cbox_bloodtype)
         Me.Controls.Add(Me.Label11)
@@ -280,7 +302,7 @@ Partial Class PatientRegistrationForm
         Me.Name = "PatientRegistrationForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Patient Registration Form"
-        CType(Me.pboxpatientpic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbox_patientpic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -301,11 +323,14 @@ Partial Class PatientRegistrationForm
     Friend WithEvents cbox_bloodtype As System.Windows.Forms.ComboBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents cboxpatientgender As System.Windows.Forms.ComboBox
-    Friend WithEvents pboxpatientpic As System.Windows.Forms.PictureBox
+    Friend WithEvents pbox_patientpic As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents btn_save As System.Windows.Forms.Button
     Friend WithEvents txt_lname As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents lbl_patientid As System.Windows.Forms.Label
     Friend WithEvents dtp_bday As System.Windows.Forms.DateTimePicker
 End Class
+
