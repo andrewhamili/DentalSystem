@@ -5,7 +5,7 @@ Module GlobalVariableModule
     Public SystemTitle As String = "Dental System"
 
     Public MySQLConn As New MySqlConnection
-    Public connstring As String = "server=localhost;userid=root;Password=microcircle;database=dentalsystem"
+    Public connstring As String = "server=localhost;userid=root;Password=root;database=dentalsystem"
     Public comm As MySqlCommand
     Public reader As MySqlDataReader
     Public adapter As New MySqlDataAdapter

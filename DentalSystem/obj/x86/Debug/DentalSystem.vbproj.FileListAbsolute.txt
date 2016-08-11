@@ -13,3 +13,17 @@ C:\Users\Andrew\documents\visual studio 2010\Projects\DentalSystem\DentalSystem\
 C:\Users\Andrew\Documents\Visual Studio 2015\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.exe
 C:\Users\Andrew\Documents\Visual Studio 2015\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.xml
 C:\Users\Andrew\Documents\Visual Studio 2015\Projects\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.pdb
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.exe
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.xml
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.pdb
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\bin\Debug\DentalSystem.exe
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\bin\Debug\DentalSystem.pdb
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\bin\Debug\DentalSystem.xml
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\bin\Debug\MySql.Data.dll
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.vbprojResolveAssemblyReference.cache
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.AccountManagement.resources
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Login.resources
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Home.resources
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.Resources.resources
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.PatientRegistrationForm.resources
+C:\Users\Andrew\Source\Repos\DentalSystem\DentalSystem\obj\x86\Debug\DentalSystem.vbproj.GenerateResource.Cache

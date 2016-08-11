@@ -6,6 +6,8 @@ Public Class Login
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        TestDBConnection()
+
         Me.Text = SystemTitle 'Get the System Title Bar text from the Public String Variable "SystemTitle"
 
         lbl_header.Text = SystemTitle
@@ -90,5 +92,22 @@ Public Class Login
 
     Private Sub btn_cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancel.Click
         End
+    End Sub
+    Public Sub TestDBConnection()
+        If MySQLConn.State = ConnectionState.Open Then
+            MySQLConn.Close()
+        End If
+
+        MySQLConn.ConnectionString = connstring
+
+        Try
+            MySQLConn.Open()
+            MySQLConn.Close()
+        Catch ex As Exception
+            MsgBox("Cannot connect to MySQLServer. " & ex.Message & "", MsgBoxStyle.Critical, SystemTitle)
+            End
+        Finally
+            MySQLConn.Dispose()
+        End Try
     End Sub
 End Class
